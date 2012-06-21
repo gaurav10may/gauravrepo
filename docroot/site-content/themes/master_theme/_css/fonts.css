@@ -1,0 +1,18 @@
+/******************************************************
+
+	FONT STYLES
+		
+	This file uses the @font-face css code and requires multiple versions of each font file
+	
+*/
+
+
+
+@font-face {
+	font-family: 'bell_gothic_std';
+	src: url('../_fonts/BellGothicStd-Bold/bellgothicstd-bold.eot');
+	src:	local('Bell Gothic Std Light Bold'),
+			url('../_fonts/BellGothicStd-Bold/bellgothicstd-bold.woff') format('woff'),
+			url('../_fonts/BellGothicStd-Bold/bellgothicstd-bold.ttf') format('truetype'),
+			url('../_fonts/BellGothicStd-Bold/bellgothicstd-bold.svg#webfont') format('svg');
+}

@@ -1,0 +1,44 @@
+
+/***************************
+SITE CONTENT
+***************************/
+
+	/***************************
+	PRIMARY / SECONDARY
+	*/	
+	#primary {
+		float: left;
+		width: 580px;
+		}
+	#secondary {
+		float: right;
+		width: 400px;
+		}
+		
+		/* SINGLE ENTRY */
+		.single #primary {
+			float: none;
+			width: auto;
+			}
+			.single #content {
+				}
+				.single .entry-header,
+				.single .entry-content,
+				.single footer.entry-meta,
+				.single #comments-title {
+					}
+		/* PAGE */
+		.page #primary {
+			float: none;
+			width: auto;
+			}
+
+		/* error404 */
+		.error404 #primary {
+			float: none;
+			width: auto;
+			}
+		.error404 #primary #content {
+			}	
+			
+			

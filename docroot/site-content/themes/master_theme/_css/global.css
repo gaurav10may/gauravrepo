@@ -1,0 +1,132 @@
+/******************************************************
+GLOBAL stylesheet
+removes automatic styles of HTML element
+also adds some basic page styles like fonts and body general styles
+ */
+
+html {
+	height: 100%;
+	overflow-y:scroll;
+} 
+
+body{
+	min-height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+*{
+	/* sets all page elements to 0 padding/margin */
+	margin: 0px;
+	padding: 0px;
+	vertical-align: baseline;
+	border: 0; 
+	}
+/* Make HTML 5 elements display block-level for consistent styling */  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+del,
+ins {
+	text-decoration: none;
+}
+
+:focus{
+	-moz-outline-style: none;
+	outline: none;
+	}
+ul, ol, dl {
+	list-style-position: inherit;
+	}
+ul {
+	list-style-type: none;
+	}
+ol {
+	list-style-type: decimal;
+	}
+
+caption, td, th { 
+	text-align: left; 
+	font-weight: normal; 
+}
+table, td, th { 
+	vertical-align: middle; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+blockquote, q { quotes: "" ""; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup {
+	vertical-align: baseline;
+}
+
+sub {
+	vertical-align: baseline;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+	color: #000;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+input[type="radio"]{
+	margin: 3px 0;
+	}
+input[type="checkbox"]{
+	margin: 2px 0;
+	}
+
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input,
+button,
+textarea,
+select {
+	*font-size: 100%;
+}
+
+button::-moz-focus-inner {/* overrides extra padding in Firefox */
+	border: none;  
+	padding: 0;
+	}
+a{
+	cursor: pointer;
+	}
+a img, a:link img, a:visited img, a:active img, a:focus img, a:hover img { border: none; }

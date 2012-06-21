@@ -1,0 +1,247 @@
+/******************************************************
+GENERAL STYLES
+-reused general styles	
+***************************/
+
+	/***********************
+	ARTICLE (POSTS, PAGES, PODS)
+	*/
+	.post, .page{
+		padding: 0 20px 25px;
+		clear: both;
+		overflow: hidden;
+		}
+		.post .entry-image, .page .entry-image{
+			float: left;
+			margin-right: 10px;
+			}
+		.post .entry-title, .page .entry-title{
+			padding-top: 0;
+			color: #666666;
+			font-size: 1.25em;
+			line-height: 1.1em;
+			font-weight: bold;
+			}
+			.post .entry-title a, .page .entry-title a{
+				color: #666666;
+				}
+			.post .entry-title a:hover, .page .entry-title a:hover{
+				color: #0352af;
+				}
+		.post .entry-meta, .page .entry-meta{
+			color: #999999;
+			font-size: .91em;
+			display: inline-block;
+			padding-bottom: 5px;
+			}
+		/* SINGLE */
+		.single .post .entry-image, .page .page .entry-image{
+			float: none;
+			margin-right: 0;
+			}
+		
+	/***************************
+	FORMS
+	*/
+	.form_element_div{
+		padding: 0 0 9px;
+		overflow: hidden;
+		}
+		.form_element_div label,
+		.form_element_div .multiOptionLabel{
+			display: block;
+			width: 92px;
+			padding: 3px 0 0 0;
+			float: left;
+			text-align: left;
+			font-weight: bold;
+			}
+		.form_element_div input{
+			float: left;
+			}
+		.form_element_div input[type="text"],
+		.form_element_div input[type="password"]{
+			line-height: 1.3em;
+			border: 1px solid #cbd0d4;
+			width: 252px;
+			height: 18px;
+			padding: 1px 10px 0 2px;
+			}
+		/* TEXTAREA */
+		.form_element_div textarea{
+			line-height: 1.3em;
+			border: 1px solid #cbd0d4;
+			width: 448px;
+			height: 66px;
+			padding: 1px 10px 0 2px;
+			}
+		/* SELECT */
+		.form_element_div select{
+			line-height: 1.3em;
+			border: 1px solid #cbd0d4;
+			width: 446px;
+			padding: 0 0 0 4px;
+			}
+			.form_element_div select option{
+				padding: 0 0 0 4px;
+				}
+		/* RADIO/CHECKBOXES */
+		.form_element_div input[type="radio"],
+		.form_element_div input[type="checkbox"]{
+			vertical-align: middle;
+			}
+		.form_element_div_radio label,
+		.form_element_div_checkbox label{
+			width: auto;
+			text-align: left;
+			padding: 3px 11px 0 4px;
+			text-transform: capitalize;
+			}
+		.win.ff3 .form_element_div_checkbox label,
+		.chrome .form_element_div_checkbox label{
+			padding: 1px 11px 0 4px;
+			}
+			.multiInputInnerSpan input{
+				}
+		/* DATE SELECTS */
+		.form_select_date select{
+			width: auto;
+			}
+		.form_select_date label{
+			display: none;
+			}
+	/* FORM BUTTONS */
+	.form_buttons{
+		text-align: right;
+		}
+		.form_buttons button{
+			}
+	/***************************
+	ITEMS
+	*/
+	.items li.item{
+		position: relative;
+		clear: both;
+		padding: 0 11px 10px;
+		overflow: hidden;
+		}
+		.item .item_image{
+			float: left;
+			margin-right: 10px;
+			border: 1px solid #cccccc;
+			padding: 4px;
+			background-color: #FFF;
+			line-height: .1em;
+			display: block;
+			}
+		.item .item_text{
+			overflow: hidden;
+			zoom: 1;
+			display: block;
+			}
+			.items h1,
+			.items h2,
+			.items h3,
+			.items h4{
+				padding-bottom: 5px;
+				font-weight: bold;
+				line-height: 1.3em;
+				}
+			.items h3{
+				padding-bottom: 1px;
+				}
+				.items h3 a{
+					text-decoration: none;
+					}
+			.items .item_desc{
+				padding: 0 0px 0 0px;
+				line-height: 1.17em;
+				}
+	/***********************
+	NATIVE HTML STRUCTURES
+	note: if you make changes to this area, also change editor-style.css mceContentBody section at the bottom of that file
+	*/
+	.native_html_style h1, .native_html_style h2, .native_html_style h3, .native_html_style h4 {
+		font-size:2em;
+		font-weight:bold;
+		}
+	.native_html_style h2 {
+		padding: 2px 0 0;
+		color: #1c4c77;
+		font-size: 1.33em;
+		font-weight: bold;
+		line-height: 1.2em;
+		}
+	.native_html_style h3 {
+		padding: 2px 0 0;
+		color: #1c4c77;
+		font-size: 1.2em;
+		line-height: 1.2em;
+		font-weight: bold;
+		}
+	.native_html_style h4 {
+		font-size:1.1em;
+		}
+	.native_html_style img,
+	.native_html_style a img{
+		border: 1px solid #cccccc;
+		}
+	.native_html_style .headline {
+		border-bottom:1px solid #666666;
+		font-size:1.6em;
+		font-weight:bold;
+		margin:15px 0;
+		}
+	.native_html_style blockquote{
+		padding: 10px;
+		}
+	.native_html_style p,
+	.native_html_style ul,
+	.native_html_style ol,
+	.native_html_style dl {
+		margin:10px 0;
+		}
+		.native_html_style p{
+			margin: 15px 0 0;}
+	.native_html_style ul,
+	.native_html_style ol{
+		padding: 0 0 0 15px;
+		}
+		.native_html_style ul li {
+			list-style:disc outside none;
+			margin:0 0 0 15px;
+			}
+		.native_html_style ul li ul li{
+			list-style-type: circle;
+			}
+		.native_html_style ol li {
+			list-style:decimal outside none;
+			margin:0 0 0 15px;
+			}
+		.native_html_style dt {
+			font-weight:bold;
+			padding:0 0 0 5px;
+			}
+		.native_html_style dd {
+			padding:0 0 0 15px;
+			}
+	.native_html_style td,
+	.native_html_style th {
+		vertical-align: top;
+		padding: 3px;
+		}
+
+
+	/***********************
+	DEVELOPMENT VIEW
+	for dev purposes only
+	please always leave this code at the bottom of this file.
+	*/
+	#development_info{
+		position: absolute;
+		top: 28px;
+		left: 10px;
+		background-color: #FF8922;
+		border: 1px solid black;
+		padding: 10px;
+	}

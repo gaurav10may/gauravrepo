@@ -1,0 +1,31 @@
+@import url("buttons_and_icons.css");
+/******************************************************
+	ADMIN-AREA CSS
+	
+*/
+
+#postcustom,
+#commentstatusdiv,
+#commentsdiv{
+	display: none;
+	}
+#dashboard_quick_press,
+#dashboard_quick_press-hide{
+    display: none !important;
+    }
+tr.image-size div.image-size-item{
+    width: 50%;
+    text-align: left;
+}
+tr.image-size div.image-size-item label{
+    zoom: 1;
+}
+
+
+#bulk-titles {
+	position: relative;
+	}
+	
+.taghint {
+	position: relative;
+	}

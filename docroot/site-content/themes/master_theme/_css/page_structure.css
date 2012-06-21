@@ -1,0 +1,167 @@
+/******************************************************
+PAGE STRUCTURE stylesheet
+containing main structure, header and footer
+*/
+
+/***************************
+OVERALL SITE STYLES
+***************************/
+body{
+	/* Fonts are sized using a percentage in the body style and em's instead of pixels. The base font size for telemundo is 12 pixels. The body style is set at 75% (base font size in browsers is 16 px) making the style 'font-size: 1em;' equal to 12px. TO CALCULATE A SIZE: divide the number by 12 - as in 18/12=1.5
+
+    * .75em = 9px
+    * .84em = 10px
+    * .92em = 11px
+    * 1em = 12px
+    * 1.08em = 13px
+    * 1.17em = 14px
+    * 1.25em = 15px
+    * 1.33em = 16px
+    * 1.5em = 18px
+	*/
+	font-size: 75%; /* 12px */
+	font-family: Arial, sans-serif;
+	color: #555555;
+	background-color: #ccc;
+	}
+
+a{ 
+	text-decoration: none;
+	color: #0352af; 
+	cursor: pointer; 
+	}
+.screen-reader-text{
+	display: none;
+	}
+input[type="text"],
+input[type="password"],
+textarea{
+	border: 1px solid #000;
+	}
+/***************************
+MAIN CONTENT CONTAINER
+***************************/
+#wrapper{
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+	width: 980px;
+	padding: 0;
+	}
+	/***************************
+	HEADER
+	***************************/
+	#header{
+		width: 943px;
+		overflow: hidden;
+		margin: 0 auto;
+		padding: 16px 20px 0 17px;
+		background-color: #ececec;
+		z-index: 10;
+		position: relative;
+		}
+		#header #site-title {
+			padding: 12px 0 0;
+			}
+			#header #site-title a{
+				background: url(http://code.nbcudps.com/dummyimage/300x50) no-repeat left top;
+				width: 300px;
+				height: 50px;
+				display: block;
+				text-indent: -9999px;
+				}
+		#header nav {
+			overflow: hidden;
+			float: left;
+			}
+			#header .menu li{
+				float: left;
+				}
+				#header .menu li a{
+					padding: 0 11px;
+					}
+		#header-widgets{
+			clear: both;
+			float: right;
+			}
+			#header-widgets .widget_search{
+				}
+				#header-widgets .widget_search label{
+					font-size: 1.25em;
+					display: block;
+					float: left;
+					line-height: 1.2em;
+					}
+				#header-widgets .widget_search .site_search{
+					background-color: #FFF;
+					width: 256px;
+					height: 25px;
+					border: none;
+					float: left;
+					padding-left: 5px;
+					}
+				#header-widgets .widget_search #searchsubmit{
+					border: 1px solid #000;
+					float: left;
+					}
+				#header-widgets .widget_search #s{
+					float: left;
+					}
+				#header-widgets .widget_search #list1{
+					/* example code for when RAMP or any autocomplete is in place */
+					position: absolute;
+					left: 76px;
+					top: 30px;
+					background: #fff;
+					padding: 8px 12px 12px;
+					width: 237px;
+					display: none;
+					box-shadow: 3px 3px 2px #b4b4b5;
+					-moz-box-shadow: 1px 2px 2px #b4b4b5;
+					-webkit-box-shadow: 1px 2px 2px #b4b4b5;
+					}
+					#header-widgets .widget_search #list1 a{
+						color: #444;
+						display: block;
+						padding: 2px 0;
+						}
+	/***************************
+	MAIN
+	***************************/
+	#main{
+		clear: both;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 10px 0 20px;
+		position: relative;
+		z-index: 1;
+		background-color: #fff;
+		}
+
+
+	/***************************
+	FOOTER
+	***************************/
+	#footer{
+		position:relative;
+		clear: both;
+		text-align: left;
+		overflow: hidden;
+		}
+		#footer p{
+			float: left;
+			clear: both;
+			}
+		#footer_links {
+			float: right;
+			margin-top: -15px;
+			}
+			#footer_links li{
+			display: inline;
+			}
+				#footer_links li a{
+					padding: 0 11px;
+					}
+				#footer_links li:first-child a{
+					background: none;
+					}

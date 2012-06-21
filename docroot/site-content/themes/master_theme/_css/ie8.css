@@ -1,0 +1,24 @@
+/******************************************************
+
+	CSS FIXES FOR IE8
+		
+	Changes made to the layout rules for IE8 should be contained here. 
+	Do NOT modify other css resource for IE8 fixes!
+	
+*/
+
+/******************************************************
+	MODULE INTERNALS
+***************************/
+	/***************************
+	FORMS
+	*/
+	.form_element_div_radio label{
+		padding: 2px 11px 0 4px;
+		}
+	.form_element_div_checkbox label{
+		padding: 1px 11px 0 4px;
+		}
+	.form_element_div label{
+		padding-top:12px;
+		}

@@ -1,0 +1,225 @@
+<?php
+/**
+ * The base configurations of the WordPress.
+ *
+ * This file has the following configurations: MySQL settings, Table Prefix,
+ * Secret Keys, WordPress Language, and ABSPATH. You can find more information
+ * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
+ * wp-config.php} Codex page. You can get the MySQL settings from your web host.
+ *
+ * This file is used by the wp-config.php creation script during the
+ * installation. You don't have to use the web site, you can just copy this file
+ * to "wp-config.php" and fill in the values.
+ *
+ * @package WordPress
+ */
+
+// ** MySQL settings - You can get this info from your web host ** //
+switch ( $_SERVER['HTTP_HOST'] ) {
+	case 'dev.example.com': 
+		// DEV ENVIRONMENT
+		/** The name of the database for WordPress */
+		define('DB_NAME', 'NBCPRESSD01');
+		/** MySQL database username */
+		define('DB_USER', 'nbcprsdusr');
+		/** MySQL database password */
+		define('DB_PASSWORD', 'Nb(p43sD');
+		/** MySQL hostname */
+		define('DB_HOST', '66.77.88.81');
+		/** Database Charset to use in creating database tables. */
+		define('DB_CHARSET', 'utf8');
+		/** The Database Collate type. Don't change this if in doubt. */
+		define('DB_COLLATE', '');
+		break;
+	case 'qa.example.com':
+		// QA ENVIRONMENT
+		/** The name of the database for WordPress */
+		define('DB_NAME', 'WPMACTLEQ01');
+		/** MySQL database username */
+		define('DB_USER', 'macteclequsr');
+		/** MySQL database password */
+		define('DB_PASSWORD', 'MctcQm1');
+		/** MySQL hostname */
+		define('DB_HOST', '66.77.88.186');
+		/** Database Charset to use in creating database tables. */
+		define('DB_CHARSET', 'utf8');
+		/** The Database Collate type. Don't change this if in doubt. */
+		define('DB_COLLATE', '');
+		break;
+	case 'stage.example.com': 
+		// STAGE ENVIRONMENT
+		/** The name of the database for WordPress */
+		define('DB_NAME', 'WPMACTLES01');
+		/** MySQL database username */
+		define('DB_USER', 'macteclesusr');
+		/** MySQL database password */
+		define('DB_PASSWORD', 'MctcSm1');
+		/** MySQL hostname */
+		define('DB_HOST', '66.77.88.85');
+		/** Database Charset to use in creating database tables. */
+		define('DB_CHARSET', 'utf8');
+		/** The Database Collate type. Don't change this if in doubt. */
+		define('DB_COLLATE', '');
+		break;
+	case 'www.example.com': 
+		// PRODUCTION ENVIRONMENT
+		/** The name of the database for WordPress */
+		define('DB_NAME', 'NBCPRESSP01');
+		/** MySQL database username */
+		define('DB_USER', 'nbcprspusr');
+		/** MySQL database password */
+		define('DB_PASSWORD', 'Nb(pr3$P');
+		/** MySQL hostname */
+		define('DB_HOST', '66.77.88.70');
+		/** Database Charset to use in creating database tables. */
+		define('DB_CHARSET', 'utf8');
+		/** The Database Collate type. Don't change this if in doubt. */
+		define('DB_COLLATE', '');
+		break;
+}
+/** The name of the database for WordPress */
+
+/** MySQL database username */
+
+/** MySQL database password */
+
+/** MySQL hostname */
+
+/** Database Charset to use in creating database tables. */
+define('DB_CHARSET', 'utf8');
+
+/** The Database Collate type. Don't change this if in doubt. */
+define('DB_COLLATE', '');
+
+/**#@+
+ * Authentication Unique Keys and Salts.
+ *
+ * Change these to different unique phrases!
+ * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+ * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ *
+ * @since 2.6.0
+ */
+define('AUTH_KEY',         'U[.q~+W| #|!LP&).J+)aHhBJiP{=sy&ot{IY1P|+6;tx17K_nO<a-P4M)C~lTe|');
+define('SECURE_AUTH_KEY',  'y%0dR5[_1&!L+Y-3g0 )]<*nw_9Z}FiP]i}d ]&:f,YQ%.zl/0GTyj>]hU*MDS;2');
+define('LOGGED_IN_KEY',    '&gQi+x1aqjlOLAh:6.7b=UKI9v9`#jpSrU4q[X^HF~6[X&3uw*f[UpdVERg}(cCt');
+define('NONCE_KEY',        'ZuhbA-#+G.vFTT,kcDJ&Q$Yn^/kPrSQT<B2&~EW!7T[57D*7<nT}~NWq<+Z-`[tn');
+define('AUTH_SALT',        'vh.6-WFepd._O+u1q%]ETU~2H|H=PA-atI46dy~YYv%n>pG!+7#BS<|ysL1Ik/h<');
+define('SECURE_AUTH_SALT', ']ty|.2ki$^qOMygW^n%_[Qzn)v:~`79Z]Vmw5Uh0-R{+qZL4h72SC++aZV=DbR=Q');
+define('LOGGED_IN_SALT',   '[{#:/Ar|[rJ7O^;p4mF]6!.oKZYP<]y}a]vyz2lpDBS|*,egV,m!AZ!ozOI%JsFi');
+define('NONCE_SALT',       '#EUL-<i<ocm#o0EPAf{?js[SOBu/,IRlR~p) b^4j{HnV#q-=V10b0FFDF@qQt~$');
+
+/**#@-*/
+
+/**
+ * WordPress Database Table prefix.
+ *
+ * You can have multiple installations in one database if you give each a unique
+ * prefix. Only numbers, letters, and underscores please!
+ */
+$table_prefix  = 'wp_';
+
+/**
+ * WordPress Localized Language, defaults to English.
+ *
+ * Change this to localize WordPress. A corresponding MO file for the chosen
+ * language must be installed to wp-content/languages. For example, install
+ * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
+ * language support.
+ */
+define('WPLANG', '');
+
+define( 'WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/site-content' );
+define ('WP_CONTENT_URL','/site-content');
+
+/**
+ * For developers: WordPress debugging mode.
+ *
+ * Change this to true to enable the display of notices during development.
+ * It is strongly recommended that plugin and theme developers use WP_DEBUG
+ * in their development environments.
+ */
+define('WP_DEBUG', false);
+
+/*********************************
+ENVIRONMENT URL OVERRIDE
+*/
+
+// Hard-code the values of our production environment
+define( 'WP_HOME', 'http://www.example.com' );
+define( 'WP_SITEURL','http://www.example.com/nbcupress' );
+
+switch ( $_SERVER['HTTP_HOST'] ) {
+	case 'dev.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://dev.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://dev.example.com/nbcupress' );
+		break;
+	case 'qa.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://qa.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://qa.example.com/nbcupress' );
+		break;
+	case 'stage.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://stage.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://stage.example.com/nbcupress' );
+		break;
+	case 'www.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://www.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://www.example.com/nbcupress' );
+		break;
+
+	// Other environments that use subfolders should go here as well
+	// Use this to customize other constants across environments
+
+	default: // default to HTTP_HOST
+		define( 'ENV_LOCAL_HOME', 'http://' . $_SERVER['HTTP_HOST'] ); // this needs be changed if https should be supported
+		define( 'ENV_LOCAL_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] ); // this needs be changed if https should be supported
+		break;
+}
+
+define( 'ENV_NOT_PRODUCTION', WP_HOME !== ENV_LOCAL_HOME );
+
+if ( ENV_NOT_PRODUCTION ) {
+	// Override the COOKIEHASH in non-production environments
+	// We need to do this since COOKIEHASH is based off the siteurl and auth will fail
+	define( 'COOKIEHASH', md5( ENV_LOCAL_HOME ) );
+}
+
+/// END: ENVIRONMENT URL OVERRIDE
+
+/*--------------------------------------------------------------------------------------
+*
+*	nbcupress_theme_selector_by_user
+*
+*	@desc Sets up the connection between DEV users and their corresponding theme folder
+*	@author Scott Nath
+*	@since 1.0
+
+		NOTE: THIS SECTION SHOULD BE REMOVED FROM ALL NON-DEV wp-config.php FILES
+
+* 
+*-------------------------------------------------------------------------------------*/
+if ( ! function_exists( 'nbcupress_theme_selector_by_user' ) ){
+	function nbcupress_theme_selector_by_user($user_login){
+		if ( 'dev.example.com' == $_SERVER['HTTP_HOST'] ) {
+			switch( $user_login ) {
+				case 'snath':
+					define( 'SB_FORCE_THEME', 'dev_theme_1' );
+					break;
+				case 'rrasaiyan':
+					define( 'SB_FORCE_THEME', 'dev_theme_2' );
+					break;
+			}
+		}
+	}
+}
+
+/*********************************/
+
+/* That's all, stop editing! Happy blogging. */
+
+/** Absolute path to the WordPress directory. */
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+
+/** Sets up WordPress vars and included files. */
+require_once(ABSPATH . 'wp-settings.php');
