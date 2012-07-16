@@ -161,14 +161,6 @@ ENVIRONMENT URL OVERRIDE
 */
 
 
-/// BEGIN COMMENTING OUT FOR INSTALLATION BELOW THIS LINE:
-/*
-
-
-// Hard-code the values of our production environment
-define( 'WP_HOME', 'http://www.example.com' );
-define( 'WP_SITEURL','http://www.example.com/nbcupress' );
-
 switch ( $_SERVER['HTTP_HOST'] ) {
 	case 'dev.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
 		define( 'ENV_LOCAL_HOME', 'http://dev.example.com' );
@@ -199,6 +191,15 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 		define( 'ENV_LOCAL_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] ); // this needs be changed if https should be supported
 		break;
 }
+
+
+/// BEGIN COMMENTING OUT FOR INSTALLATION BELOW THIS LINE:
+/*
+
+
+// Hard-code the values of our production environment
+define( 'WP_HOME', 'http://www.example.com' );
+define( 'WP_SITEURL','http://www.example.com/nbcupress' );
 
 define( 'ENV_NOT_PRODUCTION', WP_HOME !== ENV_LOCAL_HOME );
 
