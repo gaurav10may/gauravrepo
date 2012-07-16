@@ -160,6 +160,11 @@ define('WP_DEBUG', false);
 ENVIRONMENT URL OVERRIDE
 */
 
+
+/// BEGIN COMMENTING OUT FOR INSTALLATION BELOW THIS LINE:
+/*
+
+
 // Hard-code the values of our production environment
 define( 'WP_HOME', 'http://www.example.com' );
 define( 'WP_SITEURL','http://www.example.com/nbcupress' );
@@ -202,6 +207,12 @@ if ( ENV_NOT_PRODUCTION ) {
 	// We need to do this since COOKIEHASH is based off the siteurl and auth will fail
 	define( 'COOKIEHASH', md5( ENV_LOCAL_HOME ) );
 }
+
+
+*/
+/// END COMMENTING OUT FOR INSTALLATION ABOVE THIS LINE
+
+
 
 /// END: ENVIRONMENT URL OVERRIDE
 
