@@ -16,14 +16,14 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 switch ( $_SERVER['HTTP_HOST'] ) {
-	case 'dev.nbcupress.nbcudps.com': 
+	case 'dev.example.com': 
 		// DEV ENVIRONMENT
 		/** The name of the database for WordPress */
-		define('DB_NAME', 'NBCPRESSD01');
+		define('DB_NAME', 'ENTER_DATABASE_NAME');
 		/** MySQL database username */
-		define('DB_USER', 'nbcprsdusr');
+		define('DB_USER', 'ENTER_DATABASE_USERNAME');
 		/** MySQL database password */
-		define('DB_PASSWORD', 'Nb(p43sD');
+		define('DB_PASSWORD', 'ENTER_DATABASE_PASSWORD');
 		/** MySQL hostname */
 		define('DB_HOST', '66.77.88.81');
 		/** Database Charset to use in creating database tables. */
@@ -31,14 +31,14 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 		/** The Database Collate type. Don't change this if in doubt. */
 		define('DB_COLLATE', '');
 		break;
-	case 'qa.nbcupress.nbcudps.com':
+	case 'qa.example.com':
 		// QA ENVIRONMENT
 		/** The name of the database for WordPress */
-		define('DB_NAME', 'WPMACTLEQ01');
+		define('DB_NAME', 'ENTER_DATABASE_NAME');
 		/** MySQL database username */
-		define('DB_USER', 'macteclequsr');
+		define('DB_USER', 'ENTER_DATABASE_USERNAME');
 		/** MySQL database password */
-		define('DB_PASSWORD', 'MctcQm1');
+		define('DB_PASSWORD', 'ENTER_DATABASE_PASSWORD');
 		/** MySQL hostname */
 		define('DB_HOST', '66.77.88.186');
 		/** Database Charset to use in creating database tables. */
@@ -46,14 +46,14 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 		/** The Database Collate type. Don't change this if in doubt. */
 		define('DB_COLLATE', '');
 		break;
-	case 'stage.nbcupress.nbcudps.com': 
+	case 'stage.example.com': 
 		// STAGE ENVIRONMENT
 		/** The name of the database for WordPress */
-		define('DB_NAME', 'WPMACTLES01');
+		define('DB_NAME', 'ENTER_DATABASE_NAME');
 		/** MySQL database username */
-		define('DB_USER', 'macteclesusr');
+		define('DB_USER', 'ENTER_DATABASE_USERNAME');
 		/** MySQL database password */
-		define('DB_PASSWORD', 'MctcSm1');
+		define('DB_PASSWORD', 'ENTER_DATABASE_PASSWORD');
 		/** MySQL hostname */
 		define('DB_HOST', '66.77.88.85');
 		/** Database Charset to use in creating database tables. */
@@ -61,14 +61,14 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 		/** The Database Collate type. Don't change this if in doubt. */
 		define('DB_COLLATE', '');
 		break;
-	case 'nbcupress.nbcudps.com': 
+	case 'example.com': 
 		// PRODUCTION ENVIRONMENT
 		/** The name of the database for WordPress */
-		define('DB_NAME', 'NBCPRESSP01');
+		define('DB_NAME', 'ENTER_DATABASE_NAME');
 		/** MySQL database username */
-		define('DB_USER', 'nbcprspusr');
+		define('DB_USER', 'ENTER_DATABASE_USERNAME');
 		/** MySQL database password */
-		define('DB_PASSWORD', 'Nb(pr3$P');
+		define('DB_PASSWORD', 'ENTER_DATABASE_PASSWORD');
 		/** MySQL hostname */
 		define('DB_HOST', '66.77.88.70');
 		/** Database Charset to use in creating database tables. */
@@ -76,14 +76,14 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 		/** The Database Collate type. Don't change this if in doubt. */
 		define('DB_COLLATE', '');
 		break;
-	case 'www.nbcupress.nbcudps.com': 
+	case 'www.example.com': 
 		// PRODUCTION ENVIRONMENT
 		/** The name of the database for WordPress */
-		define('DB_NAME', 'NBCPRESSP01');
+		define('DB_NAME', 'ENTER_DATABASE_NAME');
 		/** MySQL database username */
-		define('DB_USER', 'nbcprspusr');
+		define('DB_USER', 'ENTER_DATABASE_USERNAME');
 		/** MySQL database password */
-		define('DB_PASSWORD', 'Nb(pr3$P');
+		define('DB_PASSWORD', 'ENTER_DATABASE_PASSWORD');
 		/** MySQL hostname */
 		define('DB_HOST', '66.77.88.70');
 		/** Database Charset to use in creating database tables. */
@@ -160,30 +160,27 @@ define('WP_DEBUG', false);
 ENVIRONMENT URL OVERRIDE
 */
 
-// Hard-code the values of our production environment
-define( 'WP_HOME', 'http://www.nbcupress.nbcudps.com' );
-define( 'WP_SITEURL','http://www.nbcupress.nbcudps.com/nbcupress' );
 
 switch ( $_SERVER['HTTP_HOST'] ) {
-	case 'dev.nbcupress.nbcudps.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
-		define( 'ENV_LOCAL_HOME', 'http://dev.nbcupress.nbcudps.com' );
-		define( 'ENV_LOCAL_SITEURL', 'http://dev.nbcupress.nbcudps.com/nbcupress' );
+	case 'dev.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://dev.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://dev.example.com/nbcupress' );
 		break;
-	case 'qa.nbcupress.nbcudps.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
-		define( 'ENV_LOCAL_HOME', 'http://qa.nbcupress.nbcudps.com' );
-		define( 'ENV_LOCAL_SITEURL', 'http://qa.nbcupress.nbcudps.com/nbcupress' );
+	case 'qa.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://qa.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://qa.example.com/nbcupress' );
 		break;
-	case 'stage.nbcupress.nbcudps.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
-		define( 'ENV_LOCAL_HOME', 'http://stage.nbcupress.nbcudps.com' );
-		define( 'ENV_LOCAL_SITEURL', 'http://stage.nbcupress.nbcudps.com/nbcupress' );
+	case 'stage.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://stage.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://stage.example.com/nbcupress' );
 		break;
-	case 'nbcupress.nbcudps.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
-		define( 'ENV_LOCAL_HOME', 'http://www.nbcupress.nbcudps.com' );
-		define( 'ENV_LOCAL_SITEURL', 'http://www.nbcupress.nbcudps.com/nbcupress' );
+	case 'example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://example.com/nbcupress' );
 		break;
-	case 'www.nbcupress.nbcudps.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
-		define( 'ENV_LOCAL_HOME', 'http://www.nbcupress.nbcudps.com' );
-		define( 'ENV_LOCAL_SITEURL', 'http://www.nbcupress.nbcudps.com/nbcupress' );
+	case 'www.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://www.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://www.example.com/nbcupress' );
 		break;
 
 	// Other environments that use subfolders should go here as well
@@ -195,6 +192,15 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 		break;
 }
 
+
+/// BEGIN COMMENTING OUT FOR INSTALLATION BELOW THIS LINE:
+/*
+
+
+// Hard-code the values of our production environment
+define( 'WP_HOME', 'http://www.example.com' );
+define( 'WP_SITEURL','http://www.example.com/nbcupress' );
+
 define( 'ENV_NOT_PRODUCTION', WP_HOME !== ENV_LOCAL_HOME );
 
 if ( ENV_NOT_PRODUCTION ) {
@@ -202,6 +208,12 @@ if ( ENV_NOT_PRODUCTION ) {
 	// We need to do this since COOKIEHASH is based off the siteurl and auth will fail
 	define( 'COOKIEHASH', md5( ENV_LOCAL_HOME ) );
 }
+
+
+*/
+/// END COMMENTING OUT FOR INSTALLATION ABOVE THIS LINE
+
+
 
 /// END: ENVIRONMENT URL OVERRIDE
 
@@ -219,7 +231,7 @@ if ( ENV_NOT_PRODUCTION ) {
 *-------------------------------------------------------------------------------------*/
 if ( ! function_exists( 'nbcupress_theme_selector_by_user' ) ){
 	function nbcupress_theme_selector_by_user($user_login){
-		if ( 'dev.nbcupress.nbcudps.com' == $_SERVER['HTTP_HOST'] ) {
+		if ( 'dev.example.com' == $_SERVER['HTTP_HOST'] ) {
 			switch( $user_login ) {
 				case 'snath':
 					define( 'SB_FORCE_THEME', 'dev_theme_1' );
