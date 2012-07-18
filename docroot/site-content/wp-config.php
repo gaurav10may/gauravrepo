@@ -16,7 +16,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 switch ( $_SERVER['HTTP_HOST'] ) {
-	case 'dev.example.com': 
+	case 'dev.nbcupress.example.com': 
 		// DEV ENVIRONMENT
 		/** The name of the database for WordPress */
 		define('DB_NAME', 'ENTER_DATABASE_NAME');
@@ -31,7 +31,7 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 		/** The Database Collate type. Don't change this if in doubt. */
 		define('DB_COLLATE', '');
 		break;
-	case 'qa.example.com':
+	case 'qa.nbcupress.example.com':
 		// QA ENVIRONMENT
 		/** The name of the database for WordPress */
 		define('DB_NAME', 'ENTER_DATABASE_NAME');
@@ -162,13 +162,13 @@ ENVIRONMENT URL OVERRIDE
 
 
 switch ( $_SERVER['HTTP_HOST'] ) {
-	case 'dev.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
-		define( 'ENV_LOCAL_HOME', 'http://dev.example.com' );
-		define( 'ENV_LOCAL_SITEURL', 'http://dev.example.com/nbcupress' );
+	case 'dev.nbcupress.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://dev.nbcupress.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://dev.nbcupress.example.com/nbcupress' );
 		break;
-	case 'qa.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
-		define( 'ENV_LOCAL_HOME', 'http://qa.example.com' );
-		define( 'ENV_LOCAL_SITEURL', 'http://qa.example.com/nbcupress' );
+	case 'qa.nbcupress.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://qa.nbcupress.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://qa.nbcupress.example.com/nbcupress' );
 		break;
 	case 'stage.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
 		define( 'ENV_LOCAL_HOME', 'http://stage.example.com' );
@@ -229,9 +229,12 @@ if ( ENV_NOT_PRODUCTION ) {
 
 * 
 *-------------------------------------------------------------------------------------*/
+/*
+planning to depreciate
+still functional if needed - July 18, 2012
 if ( ! function_exists( 'nbcupress_theme_selector_by_user' ) ){
 	function nbcupress_theme_selector_by_user($user_login){
-		if ( 'dev.example.com' == $_SERVER['HTTP_HOST'] ) {
+		if ( 'dev.nbcupress.example.com' == $_SERVER['HTTP_HOST'] ) {
 			switch( $user_login ) {
 				case 'snath':
 					define( 'SB_FORCE_THEME', 'dev_theme_1' );
@@ -246,6 +249,7 @@ if ( ! function_exists( 'nbcupress_theme_selector_by_user' ) ){
 		}
 	}
 }
+*/
 
 /*********************************/
 
