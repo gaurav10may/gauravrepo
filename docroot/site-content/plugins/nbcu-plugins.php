@@ -13,7 +13,7 @@ function nbcu_plugins_url( $url = '', $path = '', $plugin = '' ) {
 	
 	$plugin_base_name = basename( dirname( $plugin ));
 	$plugin_dir_path = rtrim(str_replace( basename( dirname( $plugin ) ), '', dirname( $plugin ) ), '/');
-	if($plugin_dir_path != WP_PLUGIN_DIR){
+	if(($plugin_dir_path != WP_PLUGIN_DIR) && $plugin_dir_path){
 		$url = WP_PLUGIN_URL.$nbcu_url.$plugin_base_name;
 	}
 	
