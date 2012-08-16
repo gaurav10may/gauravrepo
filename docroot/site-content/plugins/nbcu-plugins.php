@@ -10,10 +10,12 @@
 function nbcu_plugins_url( $url = '', $path = '', $plugin = '' ) {
 
 	$nbcu_url = '/nbcu-plugins/';
-	
+	$plugins_plugin_dir = WP_PLUGIN_DIR;
+	// clean out double // for matching purposes below
+	$plugins_plugin_dir = str_replace("//","/",$plugins_plugin_dir);
 	$plugin_base_name = basename( dirname( $plugin ));
 	$plugin_dir_path = rtrim(str_replace( basename( dirname( $plugin ) ), '', dirname( $plugin ) ), '/');
-	if(($plugin_dir_path != WP_PLUGIN_DIR) && $plugin_dir_path){
+	if(($plugin_dir_path != $plugins_plugin_dir) && $plugin_dir_path){
 		$url = WP_PLUGIN_URL.$nbcu_url.$plugin_base_name;
 	}
 	
