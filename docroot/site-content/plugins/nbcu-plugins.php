@@ -11,7 +11,7 @@ function nbcu_plugins_url( $url = '', $path = '', $plugin = '' ) {
 
 	$nbcu_url = '/nbcu-plugins/';
 	$plugins_plugin_dir = WP_PLUGIN_DIR;
-	// clean out double // for matching purposes below
+	// clean out double // for matching purposes below - added August, 2012
 	$plugins_plugin_dir = str_replace("//","/",$plugins_plugin_dir);
 	$plugin_base_name = basename( dirname( $plugin ));
 	$plugin_dir_path = rtrim(str_replace( basename( dirname( $plugin ) ), '', dirname( $plugin ) ), '/');
