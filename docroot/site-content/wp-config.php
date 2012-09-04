@@ -61,6 +61,21 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 		/** The Database Collate type. Don't change this if in doubt. */
 		define('DB_COLLATE', '');
 		break;
+	case 'origin-stage.example.com': 
+		// STAGE ENVIRONMENT
+		/** The name of the database for WordPress */
+		define('DB_NAME', 'ENTER_DATABASE_NAME');
+		/** MySQL database username */
+		define('DB_USER', 'ENTER_DATABASE_USERNAME');
+		/** MySQL database password */
+		define('DB_PASSWORD', 'ENTER_DATABASE_PASSWORD');
+		/** MySQL hostname */
+		define('DB_HOST', '66.77.88.85');
+		/** Database Charset to use in creating database tables. */
+		define('DB_CHARSET', 'utf8');
+		/** The Database Collate type. Don't change this if in doubt. */
+		define('DB_COLLATE', '');
+		break;
 	case 'example.com': 
 		// PRODUCTION ENVIRONMENT
 		/** The name of the database for WordPress */
@@ -77,6 +92,36 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 		define('DB_COLLATE', '');
 		break;
 	case 'www.example.com': 
+		// PRODUCTION ENVIRONMENT
+		/** The name of the database for WordPress */
+		define('DB_NAME', 'ENTER_DATABASE_NAME');
+		/** MySQL database username */
+		define('DB_USER', 'ENTER_DATABASE_USERNAME');
+		/** MySQL database password */
+		define('DB_PASSWORD', 'ENTER_DATABASE_PASSWORD');
+		/** MySQL hostname */
+		define('DB_HOST', '66.77.88.70');
+		/** Database Charset to use in creating database tables. */
+		define('DB_CHARSET', 'utf8');
+		/** The Database Collate type. Don't change this if in doubt. */
+		define('DB_COLLATE', '');
+		break;
+	case 'origin-example.com': 
+		// PRODUCTION ENVIRONMENT
+		/** The name of the database for WordPress */
+		define('DB_NAME', 'ENTER_DATABASE_NAME');
+		/** MySQL database username */
+		define('DB_USER', 'ENTER_DATABASE_USERNAME');
+		/** MySQL database password */
+		define('DB_PASSWORD', 'ENTER_DATABASE_PASSWORD');
+		/** MySQL hostname */
+		define('DB_HOST', '66.77.88.70');
+		/** Database Charset to use in creating database tables. */
+		define('DB_CHARSET', 'utf8');
+		/** The Database Collate type. Don't change this if in doubt. */
+		define('DB_COLLATE', '');
+		break;
+	case 'origin-www.example.com': 
 		// PRODUCTION ENVIRONMENT
 		/** The name of the database for WordPress */
 		define('DB_NAME', 'ENTER_DATABASE_NAME');
@@ -174,6 +219,10 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 		define( 'ENV_LOCAL_HOME', 'http://stage.example.com' );
 		define( 'ENV_LOCAL_SITEURL', 'http://stage.example.com/nbcupress' );
 		break;
+	case 'origin-stage.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://origin-stage.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://origin-stage.example.com/nbcupress' );
+		break;
 	case 'example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
 		define( 'ENV_LOCAL_HOME', 'http://example.com' );
 		define( 'ENV_LOCAL_SITEURL', 'http://example.com/nbcupress' );
@@ -181,6 +230,14 @@ switch ( $_SERVER['HTTP_HOST'] ) {
 	case 'www.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
 		define( 'ENV_LOCAL_HOME', 'http://www.example.com' );
 		define( 'ENV_LOCAL_SITEURL', 'http://www.example.com/nbcupress' );
+		break;
+	case 'origin-example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://origin-example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://origin-example.com/nbcupress' );
+		break;
+	case 'origin-www.example.com': // Our localhost install is in a subfolder, so we're overriding the URLs here
+		define( 'ENV_LOCAL_HOME', 'http://origin-www.example.com' );
+		define( 'ENV_LOCAL_SITEURL', 'http://origin-www.example.com/nbcupress' );
 		break;
 
 	// Other environments that use subfolders should go here as well
