@@ -24,6 +24,28 @@ require_once('_inc/custom-content-types-custom-fields.php');
 
 /*--------------------------------------------------------------------------------------
 *
+*	REQUIRE: custom-content-types-custom-fields
+*
+*	@desc Requires a file which is used to create all Custom Post Types and Custom Taxonomies
+*	@author Scott Nath
+*	@since 1.1
+* 
+*-------------------------------------------------------------------------------------*/
+require_once('_inc/custom-post-types-taxonomy.php');
+
+/*--------------------------------------------------------------------------------------
+*
+*	REQUIRE: advanced-custom-fields
+*
+*	@desc Requires a file which is includes functions for created custom fields
+*	@author Scott Nath
+*	@since 1.1
+* 
+*-------------------------------------------------------------------------------------*/
+require_once('_inc/advanced-custom-fields.php');
+
+/*--------------------------------------------------------------------------------------
+*
 *	REQUIRE: options-override
 *
 *	@desc Requires a file which is includes functions for overriding options inside the wp_options table as well as override code for options which should be overridden in ALL environments
