@@ -11,16 +11,6 @@
 	
 ************************************************************************************************************************/
 
-/*--------------------------------------------------------------------------------------
-*
-*	REQUIRE: custom-content-types-custom-fields
-*
-*	@desc Requires a file which is used to create all Custom Post Types, Custom Taxonomy and Advanced Custom Fields
-*	@author Scott Nath
-*	@since 1.1
-* 
-*-------------------------------------------------------------------------------------*/
-require_once('_inc/custom-content-types-custom-fields.php');
 
 /*--------------------------------------------------------------------------------------
 *
@@ -43,29 +33,6 @@ require_once('_inc/custom-post-types-taxonomy.php');
 * 
 *-------------------------------------------------------------------------------------*/
 require_once('_inc/advanced-custom-fields.php');
-
-/*--------------------------------------------------------------------------------------
-*
-*	REQUIRE: options-override
-*
-*	@desc Requires a file which is includes functions for overriding options inside the wp_options table as well as override code for options which should be overridden in ALL environments
-*	@author Scott Nath
-*	@since 1.1
-* 
-*-------------------------------------------------------------------------------------*/
-require_once('_inc/options-override.php');
-
-/*--------------------------------------------------------------------------------------
-*
-*	REQUIRE: options-override-env
-*
-*	@desc Requires a file which is includes override code for options which should be overridden in a single environment.
-*	@note UNCOMMENT THE BELOW LINE AFTER YOU HAVE COPIED options-override-env-example.php TO options-override-env.php
-*	@author Scott Nath
-*	@since 1.1
-* 
-*-------------------------------------------------------------------------------------*/
-//require_once('_inc/options-override-env.php');
 
 
 /*--------------------------------------------------------------------------------------
